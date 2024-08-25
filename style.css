@@ -188,13 +188,31 @@ a {
 }
 
 /* Sections */
+#services{
+    background-color: white;
+
+
+}
+#services .container h2{
+    text-align: center;
+}
+
 section {
     padding: 50px 20px; /* Adjust padding */
+    
 }
+
+#about .container h2{
+    text-align: center;
+}
+
 
 section h2 {
     font-size: 2em;
     margin-bottom: 20px;
+}
+#portfolio .container h2{
+    text-align: center;
 }
 
 .service-cards, .portfolio-items {
@@ -204,7 +222,7 @@ section h2 {
 }
 
 .card, .item {
-    background: #f4f4f4;
+    background: #F2E8C6;
     padding: 20px;
     margin: 10px;
     width: 100%;
@@ -214,22 +232,22 @@ section h2 {
 
 /* CV Submission Section */
 .cv-section {
-    background-image: url(img/banner1.jpg);
+    background-color: grey;
     /* Adjust the blur radius as needed */
-    background: #f9f9f9;
+    /* background: blue; */
     padding: 50px 20px;
     text-align: center;
 }
 
 .cv-section h2 {
     font-size: 2.2em;
-    color: #333;
+    color: white;
     margin-bottom: 20px;
 }
 
 .cv-section p {
     font-size: 1.1em;
-    color: #555;
+    color: white;
     margin-bottom: 40px;
 }
 
