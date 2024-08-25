@@ -1,2 +1,2 @@
 
-url - http://pinkspyerfoundation.online/
+URL - http://pinkspyerfoundation.online/
