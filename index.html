@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinkSpyer Foundation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-pink text-white">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <img src="img/iconimg1.png" alt="Logo" style="height: 30px; width: auto; margin-right: 10px;">
+            <a class="navbar-brand" href="#">PinkSpyer Foundation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <div id="popupContainer" class="popup-container">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <h2>Join Our WhatsApp Group</h2>
+            <p>Stay updated by joining our WhatsApp group. Click the button below to join:</p>
+            <a href="https://chat.whatsapp.com/YOUR_GROUP_INVITE_LINK" target="_blank" id="joinWhatsApp" class="whatsapp-btn">Join WhatsApp Group</a>
+            <button id="exitPopup" class="exit-btn">Exit</button>
+        </div>
+    </div> -->
+   
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Your Agency</h2>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Your agency's mission and values go here.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>Custom websites tailored to your needs.</p>
+                </div>
+                <div class="card">
+                    <h3>SEO Optimization</h3>
+                    <p>Improve your site's visibility on search engines.</p>
+                </div>
+                <div class="card">
+                    <h3>UI/UX Design</h3>
+                    <p>Creating user-friendly interfaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-items">
+                <div class="item">Project 1</div>
+                <div class="item">Project 2</div>
+                <div class="item">Project 3</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Posters & Ads Section -->
+    <section class="poster-slider">
+        <h2>Our Posters</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="img/jk1.jpg" alt="Poster 1"></div>
+                <div class="slide"><img src="img/jk2.webp" alt="Poster 2"></div>
+                <div class="slide"><img src="img/jk3.jpg" alt="Poster 3"></div>
+                <div class="slide"><img src="img/jk4.webp" alt="Poster 4"></div>
+                <div class="slide"><img src="img/jk5.jpeg" alt="Poster 5"></div>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Freelancer CV Submission Section -->
+    <section id="freelancer-cv" class="cv-section">
+        <div class="container">
+            <h2>Submit Your CV</h2>
+            <p>We're always looking for talented freelancers to join our team. Please click the button below to submit your CV.</p>
+            <a href="https://forms.gle/yrHUM7Q8YUnUcCdF9" class="btn" target="_blank">Submit Your CV</a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <!-- Contact Us Section -->
+<!-- Contact Us Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below and we'll get in touch as soon as possible.</p>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Your Agency Name. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/yourprofile" target="_blank">
+                    <img src="instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/yourprofile" target="_blank">
+                    <img src="facebook-icon.png" alt="Facebook">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
