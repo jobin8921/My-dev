@@ -73,8 +73,8 @@
 }
 
 /* Background and Color */
-.bg-primary {
-    background-color: 125B9A; /* Adjust color as needed */
+.bg-pink {
+    background-color: #4E31AA; /* Adjust color as needed */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -116,6 +116,8 @@
         width: 100%;
     }
 }
+
+
 
 /* Fluid Grid Layout */
 .row {
@@ -166,7 +168,8 @@ a {
 
 /* Hero Section */
 .hero {
-    background: #e0e0e0;
+    background-image: url('img/img1.jpg');
+    /* background: #e0e0e0; */
     padding: 70px 20px; /* Adjust padding */
     text-align: center;
 }
@@ -178,7 +181,7 @@ a {
 
 .hero .btn {
     margin-top: 20px;
-    background: #333;
+    background: #4E31AA;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -211,6 +214,8 @@ section h2 {
 
 /* CV Submission Section */
 .cv-section {
+    background-image: url(img/banner1.jpg);
+    /* Adjust the blur radius as needed */
     background: #f9f9f9;
     padding: 50px 20px;
     text-align: center;
@@ -237,7 +242,7 @@ section h2 {
 /* Button Styles */
 .btn {
     display: inline-block;
-    background: #333;
+    background: #4E31AA;
     color: #fff;
     padding: 15px 30px;
     text-decoration: none;
@@ -248,9 +253,9 @@ section h2 {
     transition: background 0.3s ease;
 }
 
-.btn:hover {
+/* .btn:hover {
     background: #555;
-}
+} */
 
 .cv-section .container {
     max-width: 800px;
@@ -352,7 +357,7 @@ section h2 {
 
 /* Footer Section */
 footer {
-    background-color: #333;
+    background-color:#4E31AA;
     color: #fff;
     padding: 20px;
     text-align: center;
