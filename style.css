@@ -14,7 +14,7 @@
 .navbar-brand {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Reduced font size for mobile view */
 }
 
 .navbar-brand img {
@@ -30,51 +30,23 @@
     background-image: url("data:image/svg+xml,..."); /* Use Bootstrap's default or customize */
 }
 
-/* For Desktop View */
-@media (min-width: 992px) { /* Large screens */
-    .navbar-nav {
-        display: flex;
-        flex-direction: row;
-        margin-left: auto;
-    }
-
-    .navbar-nav .nav-item {
-        margin-left: 20px; /* Space between menu items */
-    }
-
-    .navbar-nav .nav-link {
-        padding: 10px 15px; /* Padding for nav links */
-    }
-
-    .navbar-nav .nav-link.active {
-        font-weight: bold;
-        color: #f8f9fa; /* Highlight color for active link */
-    }
+/* Navbar Links */
+.navbar-nav {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center align the menu items */
 }
 
-/* For Mobile View */
-@media (max-width: 991px) { /* Medium screens and below */
-    .navbar-collapse {
-        text-align: center; /* Center align the menu items */
-    }
-
-    .navbar-nav {
-        flex-direction: column; /* Stack items vertically */
-        margin-top: 15px;
-    }
-
-    .navbar-nav .nav-item {
-        margin-bottom: 10px; /* Space between menu items */
-    }
-
-    .navbar-nav .nav-link {
-        padding: 10px 0; /* Padding for nav links */
-    }
+.navbar-nav .nav-item {
+    margin-bottom: 10px; /* Space between menu items */
 }
 
-/* Background and Color */
-.bg-pink {
-    background-color: #e91e63; /* Adjust color as needed */
+.navbar-nav .nav-link {
+    padding: 10px 0; /* Padding for nav links */
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #f8f9fa; /* Highlight color for active link */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -94,27 +66,25 @@
 }
 
 /* For Mobile Devices (480px and up) */
-@media (max-width: 480px) {
-    .container {
-        padding: 5px;
-    }
+.container {
+    padding: 5px;
+}
 
-    .header {
-        font-size: 1.5em;
-    }
+.header {
+    font-size: 1.5em;
+}
 
-    .form-group {
-        margin-bottom: 15px;
-    }
+.form-group {
+    margin-bottom: 15px;
+}
 
-    .form-group input, .form-group textarea {
-        width: 100%;
-        box-sizing: border-box;
-    }
+.form-group input, .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
 
-    .form-group button {
-        width: 100%;
-    }
+.form-group button {
+    width: 100%;
 }
 
 /* Fluid Grid Layout */
@@ -257,13 +227,6 @@ section h2 {
     margin: auto;
 }
 
-@media (max-width: 768px) {
-    .btn {
-        padding: 10px 20px;
-        font-size: 1em;
-    }
-}
-
 /* Posters & Ads Section */
 .poster-slider {
     position: relative;
@@ -312,22 +275,6 @@ button {
 
 .next {
     right: 10px;
-}
-
-@media (max-width: 768px) {
-    .slide {
-        flex: 0 0 80%;
-        height: auto;
-    }
-
-    .slide img {
-        height: auto;
-        object-fit: contain;
-    }
-
-    .prev, .next {
-        top: 45%;
-    }
 }
 
 /* Contact Us Section */
