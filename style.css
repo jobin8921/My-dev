@@ -8,147 +8,113 @@
 
 /* Navbar Styles */
 .navbar {
-    padding: 0 15px; /* Add padding to ensure it doesn't touch the edges */
+    padding: 0 15px;
+    background-color: #f43a09; /* Primary color */
 }
 
 .navbar-brand {
     display: flex;
     align-items: center;
-    font-size: 1.2rem; /* Reduced font size for mobile view */
+    font-size: 1.5rem;
+    color: #fff; /* White text for brand */
 }
 
 .navbar-brand img {
-    height: 30px; /* Ensure logo size is consistent */
-    margin-right: 10px; /* Space between logo and brand name */
+    height: 30px;
+    margin-right: 10px;
 }
 
 .navbar-toggler {
-    border: none; /* Remove default border */
+    border: none;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,..."); /* Use Bootstrap's default or customize */
-}
-
-/* Navbar Links */
-.navbar-nav {
-    flex-direction: column; /* Stack items vertically */
-    text-align: center; /* Center align the menu items */
-}
-
-.navbar-nav .nav-item {
-    margin-bottom: 10px; /* Space between menu items */
-}
-
-.navbar-nav .nav-link {
-    padding: 10px 0; /* Padding for nav links */
-}
-
-.navbar-nav .nav-link.active {
-    font-weight: bold;
-    color: #f8f9fa; /* Highlight color for active link */
+    background-image: url("data:image/svg+xml,...");
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: black; /* White color for nav links */
+    color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #f8f9fa; /* Color on hover */
+    color: #ffb766; /* Lighter color on hover */
 }
 
-.navbar-light .navbar-brand {
-    color: #fff; /* White color for brand */
+/* For Desktop View */
+@media (min-width: 992px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 20px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 15px;
+    }
+
+    .navbar-nav .nav-link.active {
+        font-weight: bold;
+        color: #ffb766; /* Highlight color for active link */
+    }
 }
 
-.navbar-light .navbar-brand:hover {
-    color: #f8f9fa; /* Color on hover */
+/* For Mobile View */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
 }
 
-/* For Mobile Devices (480px and up) */
-.container {
-    padding: 5px;
+/* Background and Color */
+.bg-primary {
+    background-color: #f43a09;
 }
 
-.header {
-    font-size: 1.5em;
+.bg-secondary {
+    background-color: #ffb766;
 }
 
-.form-group {
-    margin-bottom: 15px;
+.text-light {
+    color: #fff;
 }
 
-.form-group input, .form-group textarea {
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.form-group button {
-    width: 100%;
-}
-
-/* Fluid Grid Layout */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex: 1;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.column-6 {
-    flex: 0 0 50%;
-}
-
-.column-4 {
-    flex: 0 0 33.33%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-video {
-    max-width: 100%;
-    height: auto;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-}
-
-a {
-    display: inline-block;
-    padding: 10px;
-}
-
-/* Container */
-.container {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
+.text-dark {
+    color: #333;
 }
 
 /* Hero Section */
 .hero {
-    background: #e0e0e0;
-    padding: 70px 20px; /* Adjust padding */
+    background: #c2edda; /* Soft green background */
+    padding: 70px 20px;
     text-align: center;
 }
 
 .hero h2 {
-    font-size: 2em; /* Adjust for mobile screens if needed */
+    font-size: 2em;
+    color: #333;
     margin-bottom: 10px;
 }
 
 .hero .btn {
     margin-top: 20px;
-    background: #333;
+    background: #68d388; /* Green button */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -156,12 +122,13 @@ a {
 
 /* Sections */
 section {
-    padding: 50px 20px; /* Adjust padding */
+    padding: 50px 20px;
 }
 
 section h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #333;
 }
 
 .service-cards, .portfolio-items {
@@ -175,7 +142,7 @@ section h2 {
     padding: 20px;
     margin: 10px;
     width: 100%;
-    max-width: 300px; /* Adjust based on screen size */
+    max-width: 300px;
     text-align: center;
 }
 
@@ -207,7 +174,7 @@ section h2 {
 /* Button Styles */
 .btn {
     display: inline-block;
-    background: #333;
+    background: #f43a09; /* Primary button color */
     color: #fff;
     padding: 15px 30px;
     text-decoration: none;
@@ -219,12 +186,14 @@ section h2 {
 }
 
 .btn:hover {
-    background: #555;
+    background: #ffb766; /* Hover color */
 }
 
-.cv-section .container {
-    max-width: 800px;
-    margin: auto;
+@media (max-width: 768px) {
+    .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
 }
 
 /* Posters & Ads Section */
@@ -247,8 +216,8 @@ section h2 {
 }
 
 .slide {
-    flex: 0 0 300px; /* Adjust width */
-    margin: 0 10px; /* Adjust margin */
+    flex: 0 0 300px;
+    margin: 0 10px;
 }
 
 .slide img {
@@ -275,6 +244,22 @@ button {
 
 .next {
     right: 10px;
+}
+
+@media (max-width: 768px) {
+    .slide {
+        flex: 0 0 80%;
+        height: auto;
+    }
+
+    .slide img {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .prev, .next {
+        top: 45%;
+    }
 }
 
 /* Contact Us Section */
