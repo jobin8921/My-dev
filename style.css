@@ -27,7 +27,7 @@
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,..."); /* Use Bootstrap's default or customize */
+    background-image: ("img/icon2.png") /* Use Bootstrap's default or customize */
 }
 
 /* For Desktop View */
